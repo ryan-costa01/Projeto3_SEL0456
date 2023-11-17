@@ -50,8 +50,4 @@ arquivo_hash = 'Senha_Crypt.txt'
 # Comparar os dois arquivos
 comparacao = comparar_hashes_arquivos(arquivo_string, arquivo_hash)
 
-# Exibir o resultado
-if comparacao:
-    print(f"Os arquivos correspondem. Senha[{Senha_Correta}]")
-else:
-    print("Os arquivos não correspondem.")
+#
