@@ -47,7 +47,5 @@ def comparar_hashes_arquivos(arquivo_string, arquivo_hash):
 arquivo_string = 'Senha.txt'
 arquivo_hash = 'Senha_Crypt.txt'
 
-# Comparar os dois arquivos
-comparacao = comparar_hashes_arquivos(arquivo_string, arquivo_hash)
-
-#
+def test_senha():
+    assert comparar_hashes_arquivos(arquivo_string, arquivo_hash)
