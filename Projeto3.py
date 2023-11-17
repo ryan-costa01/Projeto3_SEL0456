@@ -11,7 +11,7 @@ import hashlib
 Senha_Correta = "123456"
 
 def calcular_hash_senha(senha, salt):
-    """"calcular a hash correspondente à senha"""
+    """"calcular a hash correspondente à senha correta"""
     senha_concatenada = senha.encode('utf-8') + salt
     hash_obj = hashlib.sha256(senha_concatenada)
     return hash_obj.hexdigest()
